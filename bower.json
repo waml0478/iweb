@@ -1,0 +1,22 @@
+{
+  "name": "iweb",
+  "description": "Proyecto de entrega para completar el curso de Diseño de Interfaces Web",
+  "main": "index.js",
+  "authors": [
+    "Hazanow Montilla y Perez"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jade-bootstrap": "*"
+  }
+}
