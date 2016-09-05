@@ -2,21 +2,14 @@ extends layout
 
 block content
 
-	.blog-masthead
-		.container
-			nav.blog-nav
-				a.blog-nav-item.active(href='#') Home
-				a.blog-nav-item(href='#') New features
-				a.blog-nav-item(href='#') Press
-				a.blog-nav-item(href='#') New hires
-				a.blog-nav-item(href='#') About
 	.container
 		.blog-header
 			h1.blog-title The Bootstrap Blog
 			p.lead.blog-description The official example template of creating a blog with Bootstrap.
 		.row
-			.col-sm-3.col-sm-offset-1.blog-sidebar
+			.col-sm-3.blog-sidebar
 				.sidebar-module.sidebar-module-inset
+					img.img-responsive(src='http://lorempixel.com/output/people-q-c-250-250-7.jpg', alt='Responsive image')
 					h4 About
 					p
 						| Etiam porta 
@@ -59,7 +52,7 @@ block content
 						li
 						a(href='#') Facebook
 					
-			.col-sm-8.blog-main
+			.col-sm-9.col-sm-offset-1blog-main
 				.blog-post
 					h2.blog-post-title Sample blog post
 					p.blog-post-meta
@@ -145,10 +138,21 @@ block content
 					|  mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 				p
 					| Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-				nav
-					ul.pager
+				nav(aria-label='Page navigation')
+					ul.pagination
 						li
-							a(href='#') Previous
+							a(href='#', aria-label='Previous')
+								span(aria-hidden='true') «
 						li
-							a(href='#') Next
-			
+							a(href='#') 1
+						li
+							a(href='#') 2
+						li
+							a(href='#') 3
+						li
+							a(href='#') 4
+						li
+							a(href='#') 5
+						li
+							a(href='#', aria-label='Next')
+								span(aria-hidden='true') »
