@@ -1,0 +1,143 @@
+doctype html
+html(lang='es')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(charset='UTF-8')
+    title Motoclub Centurión |:: Mototurismo Venezolano::|
+    link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+    meta(name='description', content='Pagina web con contenido del Motoclub Centurion de Caracas Venezuela')
+    meta(name='author', content='Williams Montilla')
+    meta(name='robots', content='index, follow')
+    meta(name='keywords', content='motoclub centurion, moto, club, motoclub, centurion, Venezuela, Caracas, MC, Custom')
+    link(rel='canonical', href='http://www.motoclubcenturion.com.ve/index.html')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Bootstrap core CSS, Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css', integrity='sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r', crossorigin='anonymous')
+    // Custom styles for this template
+    link(href='plugins/font-awesome/font-awesome.min.css', rel='stylesheet')
+    link(href='plugins/vegas/jquery.vegas.min.css', rel='stylesheet')
+    link(href='css/countdown.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+    // Just for debugging purposes. Don't actually copy this line!
+    //if lt IE 9
+      script(src='../../docs-assets/js/ie8-responsive-file-warning.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+  body
+    // SECCION MENU IZQUIERDO
+    section.left-panel
+      nav.navigatation
+        .menu-text
+          h3
+            i.fa.fa-star-o.main-color
+            |  MC CENTURION
+        a(href='#home-section') INICIO
+        a(href='#subscribe-section') CONTACTANOS
+      // Redes Sociales
+      #social-links.Icon-trigger
+        span.fa.fa-bars
+        a.fa.fa-facebook-square(href='https://www.facebook.com/motoclub.centurion', target='_blank')
+        a.fa.fa-twitter-square(href='https://twitter.com/mccenturion1', target='_blank')
+        a.fa.fa-instagram(href='https://www.instagram.com/mccenturion1/', target='_blank')
+        a.fa.fa-youtube-square(href='https://www.youtube.com/channel/UCLLHdIoMbhkGttcqhvxCk-A', target='_blank')
+      // FIN Redes Sociales
+    // FIN SECCION MENU IZQUIERDO
+    // AREA PRINCIPAL
+    .container
+      // SECCION INICIO
+      section#home-section
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            h1.center ESTAMOS EN RENOVACIÓN...
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+              .divider
+              h3.center Trabajamos dia y noche por regresar para ti!!!
+              .divider
+              #counter
+              #counter-default.row
+                .col-lg-3.col-md-6.col-sm-6.col-xs-12
+                  .inner
+                    #day-number.timer-number
+                    .timer-text DIAS
+                    .progress.medium.active
+                      #day-bar.progress-bar.bk-blue
+                .col-lg-3.col-md-6.col-sm-6.col-xs-12
+                  .inner
+                    #hour-number.timer-number
+                    .timer-text HORAS
+                    .progress.medium.active
+                      #hour-bar.progress-bar.bk-green
+                .col-lg-3.col-md-6.col-sm-6.col-xs-12
+                  .inner
+                    #minute-number.timer-number
+                    .timer-text MINUTOS
+                    .progress.medium.active
+                      #minute-bar.progress-bar.bk-pink
+                .col-lg-3.col-md-6.col-sm-6.col-xs-12
+                  .inner
+                    #second-number.timer-number
+                    .timer-text SEGUNDOS
+                    .progress.medium.active
+                      #second-bar.progress-bar.bk-red
+      // FIN SECCION INICIO
+      // SECCION CONTACTANOS
+      section#subscribe-section
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12.sb-back-color
+            .divider-two
+            h2.center
+              i.fa.fa-star-o.main-color
+              |  CONTACTANOS AHORA 
+              i.fa.fa-star-o.main-color
+            .divider-two.margin-botom-50
+            .col-lg-6.col-lg-offset-3.col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3.col-xs-12.center
+              form(action='php/contact_form.php')
+                span Nombre:
+                input.form-control(type='text', name='nombre', placeholder='Tu nombre')
+                p
+                span E-mail:
+                input.form-control(type='email', name='correo', placeholder='Tu Email')
+                p
+                span Tel&eacutefono:
+                input.form-control(type='phone', name='telf', placeholder='Tu Telefono')
+                p
+                span Mensaje:
+                textarea.form-control(name='mensaje', rows='3')
+                p
+                span  
+                p
+                p
+                button.btn.btn-primary(type='reset') Borrar
+                button.btn.btn-primary(type='submit') Enviar
+              h3.center
+                i.fa.fa-star-o.main-color
+                |  O a traves del teléfono 0424-2209055 
+                i.fa.fa-star-o.main-color
+      // FIN SECCION CONTACTANOS
+      // SECCION PIE DE PAGINA
+      section#footer
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            | © 2013 - 2016 www.motoclubcenturion.com.ve
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            | Hosting por www.tvredes.com.ve | Diseño Web por Williams Montilla. Todos los derechos reservados.
+      // FIN SECCION PIE DE PAGINA
+    // FIN AREA PRINCIPAL
+    // AREA DE SCRIPTS DE LA PAGINA
+    // REQUIRED CORE JQUERY SCRIPTS FILE
+    script(src='//code.jquery.com/jquery-1.11.3.min.js')
+    // REQUIRED BOOTSTRAP SCRIPTS FILE
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
+    // REQUIRED SCRIPT FILES FOR JQUERY COUNTDOWN
+    script(src='plugins/countdown/jquery.countdown.js')
+    script(src='js/countdown.js')
+    // REQUIRED SCRIPT FILE FOR VEGAS BACKGROUND SLIDESHOW
+    script(src='plugins/vegas/jquery.vegas.min.js')
+    // REQUIRED SCRIPT FOR SCROLLING MENU LINKS
+    script(src='plugins/jquery.easing.1.3.js')
+    // REQUIRED CUSTOM SCRIPT FILE
+    script(src='js/custom-slideshow.js')
+    // FIN AREA DE SCRIPTS DE LA PAGINA
