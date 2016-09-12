@@ -12,15 +12,16 @@ html(lang='es')
     link(rel='canonical', href='index.html')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     // HOJAS DE ESTILO DEL TEMA POR FRAMEWORKS
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href='css/bootstrap.min.css')
-    link(rel='stylesheet', href='css/blog.css')
     // HOJAS DE ESTILO DEL TEMA PERSONALIZADAS
     link(rel='stylesheet', href='css/style.css')
-    link(rel='stylesheet', href='css/blog.css')
   body
+    .GoToTop
+      i.fa.fa-instagram.fa-fw.fa-3x
     include _nav
     block content
-    include footer
+    include _footer
     // SECCION PIE DE PAGINA
     // AREA DE SCRIPTS DE LA PAGINA
     // JQUERY SCRIPTS FILES
@@ -28,5 +29,5 @@ html(lang='es')
     // BOOTSTRAP SCRIPTS FILES
     script(src='js/bootstrap.min.js')
     // PERSONAL SCRIPT FILES
-
+    script(src='js/style.js')
     // FIN AREA DE SCRIPTS DE LA PAGINA

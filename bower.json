@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jade-bootstrap": "*"
+    "jade-bootstrap": "*",
+    "bootstrap-sass": "^3.3.7"
   }
 }
